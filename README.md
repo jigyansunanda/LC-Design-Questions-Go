@@ -1,12 +1,12 @@
 # LC Design Questions (in Golang)
 
-### Status Indicators
+#### Status Indicators
 
 - ❌ - Not Designed
 - ✅ - Designed
 
 
-### Problems
+## Problems
 
   | Problem                                                                                                                                | Difficulty Rating | Designed |  
   |----------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------|  
