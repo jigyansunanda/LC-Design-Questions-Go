@@ -6,6 +6,7 @@
 - ✅ - Designed
 
 
+
   | Problem                                                                                                                                | Difficulty Rating | Designed |  
   |----------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------|  
   | [705. Design HashSet](https://leetcode.com/problems/design-hashset/)                                                                   | Easy              | ❌        |  
