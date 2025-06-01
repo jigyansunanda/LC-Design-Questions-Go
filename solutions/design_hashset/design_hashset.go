@@ -1,27 +1,27 @@
-package solutions
+package design_hashset
 
 const (
-	MAX_SIZE = 1000001
+	MaxHashSetSize = 1000001
 )
 
 type MyHashSet struct {
-	hashtable [MAX_SIZE]bool
+	hashtable [MaxHashSetSize]bool
 }
 
 func Constructor() MyHashSet {
 	return MyHashSet{}
 }
 
-func (this *MyHashSet) Add(key int) {
-	this.hashtable[key] = true
+func (hashSet *MyHashSet) Add(key int) {
+	hashSet.hashtable[key] = true
 }
 
-func (this *MyHashSet) Remove(key int) {
-	this.hashtable[key] = false
+func (hashSet *MyHashSet) Remove(key int) {
+	hashSet.hashtable[key] = false
 }
 
-func (this *MyHashSet) Contains(key int) bool {
-	return this.hashtable[key]
+func (hashSet *MyHashSet) Contains(key int) bool {
+	return hashSet.hashtable[key]
 }
 
 /**
