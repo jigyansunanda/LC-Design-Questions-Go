@@ -10,7 +10,7 @@
 | Problem                                                                                                                                | Difficulty Rating | Designed |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------- |
 | [705. Design HashSet](https://leetcode.com/problems/design-hashset/)                                                                   | Easy              | ✅       |
-| [706. Design HashMap](https://leetcode.com/problems/design-hashmap/)                                                                   | Easy              | ❌       |
+| [706. Design HashMap](https://leetcode.com/problems/design-hashmap/)                                                                   | Easy              | ✅       |
 | [146. LRU Cache](https://leetcode.com/problems/lru-cache/)                                                                             | Medium            | ❌       |
 | [460. LFU Cache](https://leetcode.com/problems/lfu-cache/)                                                                             | Hard              | ❌       |
 | [895. Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/)                                                 | Hard              | ❌       |
