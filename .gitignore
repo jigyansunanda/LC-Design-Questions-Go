@@ -1,1 +1,5 @@
+# GoLand IDE files
 .idea
+
+# main function
+main.go
