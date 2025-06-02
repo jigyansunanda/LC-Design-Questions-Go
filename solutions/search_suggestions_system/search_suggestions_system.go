@@ -28,12 +28,14 @@ func (trie *Trie) getFinalWordsInPath() []string {
 	}
 
 	for index := range trie.dictionary {
-		wordsFromChildren := trie.dictionary[index].getFinalWordsInPath()
-		for _, word := range wordsFromChildren {
-			if len(wordsInPath) >= 3 {
-				return wordsInPath
-			} else {
-				wordsInPath = append(wordsInPath, word)
+		if trie.dictionary[index] != nil {
+			wordsFromChildren := trie.dictionary[index].getFinalWordsInPath()
+			for _, word := range wordsFromChildren {
+				if len(wordsInPath) >= 3 {
+					return wordsInPath
+				} else {
+					wordsInPath = append(wordsInPath, word)
+				}
 			}
 		}
 	}
@@ -41,8 +43,15 @@ func (trie *Trie) getFinalWordsInPath() []string {
 	return wordsInPath
 }
 
-func (trie *Trie) getSuggestions(word string, currentIndex int) []string {
-	// TODO: implement getSuggestions
+func (trie *Trie) getSuggestions(word string) []string {
+	for _, ch := range word {
+		index := ch - 'a'
+		if trie.dictionary[index] == nil {
+			return []string{}
+		}
+		trie = trie.dictionary[index]
+	}
+	return trie.getFinalWordsInPath()
 }
 
 func suggestedProducts(products []string, searchWord string) [][]string {
@@ -55,7 +64,7 @@ func suggestedProducts(products []string, searchWord string) [][]string {
 
 	for endIndex := range searchWord {
 		subString := searchWord[0 : endIndex+1]
-		currentSuggestions := trie.getSuggestions(subString, 0)
+		currentSuggestions := trie.getSuggestions(subString)
 		suggestions = append(suggestions, currentSuggestions)
 	}
 

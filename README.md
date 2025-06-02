@@ -48,4 +48,4 @@
 | [3408. Design Task Manager](https://leetcode.com/problems/design-task-manager/)                                                        | Medium            | ❌        |
 | [3508. Implement Router](https://leetcode.com/problems/implement-router/)                                                              | Medium            | ❌        |
 | [2642. Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/)          | Hard              | ❌        |
-| [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)                                            | Medium            | ❌        |
+| [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)                                            | Medium            | ✅        |
