@@ -18,7 +18,7 @@
 | [2276. Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/)                                        | Hard              | ❌        |
 | [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                                         | Medium            | ✅        |
 | [155. Min Stack](https://leetcode.com/problems/min-stack/)                                                                             | Medium            | ❌        |
-| [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)                                         | Medium            | ❌        |
+| [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)                                         | Medium            | ✅        |
 | [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)                                                               | Medium            | ❌        |
 | [307. Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)                                               | Medium            | ❌        |
 | [352. Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)                             | Hard              | ❌        |
