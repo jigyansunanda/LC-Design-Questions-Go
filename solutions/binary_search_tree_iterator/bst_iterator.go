@@ -29,11 +29,13 @@ func Constructor(root *TreeNode) BSTIterator {
 	return bstIterator
 }
 
-// ---------------- This following implementations has the time complexity as follows: ----------------
-// ---------------- Next2() : O(h)
-// ---------------- HasNext2(): O(1)
+/*
+This following implementations has the time complexity as follows:
+Next() : O(h)
+HasNext(): O(1)
+*/
 
-func (bstIterator *BSTIterator) Next2() int {
+func (bstIterator *BSTIterator) Next() int {
 	currentHead := bstIterator.head
 
 	// First pop the current head from stack
@@ -61,19 +63,8 @@ func (bstIterator *BSTIterator) Next2() int {
 	return currentHead.Val
 }
 
-func (bstIterator *BSTIterator) HasNext2() bool {
-	return bstIterator.head != nil
-}
-
-// ---------------------------------------------------------------------------
-
-// TODO: Implement Next() in O(1) and HasNext() in O(h)
-func (bstIterator *BSTIterator) Next() int {
-	panic("Next() not implemented")
-}
-
 func (bstIterator *BSTIterator) HasNext() bool {
-	panic("HasNext() not implemented")
+	return bstIterator.head != nil
 }
 
 /**
