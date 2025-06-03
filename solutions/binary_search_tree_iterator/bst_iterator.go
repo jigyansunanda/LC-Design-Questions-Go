@@ -69,11 +69,11 @@ func (bstIterator *BSTIterator) HasNext2() bool {
 
 // TODO: Implement Next() in O(1) and HasNext() in O(h)
 func (bstIterator *BSTIterator) Next() int {
-
+	panic("Next() not implemented")
 }
 
 func (bstIterator *BSTIterator) HasNext() bool {
-
+	panic("HasNext() not implemented")
 }
 
 /**
